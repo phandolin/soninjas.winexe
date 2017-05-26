@@ -6,7 +6,7 @@ Ansible role to install exe files on remote Windows hosts using Powershell.
 Requirements
 --------------
 
-Access to windows hosts with ansible
+Access to powershell on windows hosts with ansible
 
 Sample playbook file
 --------------
@@ -20,20 +20,12 @@ Sample playbook file
          - role: soninjas.winexe
            tags: lamp
 
-    hosts: Windows32
-
-    vars_files:
-      - "../roles/soninjas.winexe/vars/main.yml"
-
-    roles:
-         - role: soninjas.winexe
-           tags: lamp
 
 
 Role Variables
 --------------
 
-Update the `vars/mail.yml` file with download-link, Program-Name and filename. Group hosts under Windows and Windows32 (for 32-bit)
+Update the `vars/mail.yml` file with download-link, Program-Name and filename. Group hosts under Windows 
 
 
 
