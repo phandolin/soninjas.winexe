@@ -5,5 +5,5 @@
   static: no
 
 - include: winexe32.yml
-  when: ansible_powershell_version = "3"
+  when: ansible_powershell_version == "3"
   static: no
