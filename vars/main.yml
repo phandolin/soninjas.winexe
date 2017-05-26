@@ -1,5 +1,5 @@
 ---
 # vars file for soninjas.winexe
-  Program-Name: Shoretel Connect
-  download-link: http://shoretelserv.afc.coop/ShoreWareResources/ClientInstall/ShoreTelConnect.exe
+  Program_Name: Shoretel Connect
+  download_link: http://shoretelserv.afc.coop/ShoreWareResources/ClientInstall/ShoreTelConnect.exe
   filename: ShoreTelConnect.exe
