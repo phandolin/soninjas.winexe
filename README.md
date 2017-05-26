@@ -25,7 +25,7 @@ Sample playbook file
 Role Variables
 --------------
 
-Update the `vars/mail.yml` file with download-link, Program-Name and filename. Group hosts under Windows 
+Update the `vars/mail.yml` file with download-link, Program-Name and filename. Group hosts under Windows
 
 
 
@@ -37,4 +37,4 @@ BSD
 Author Information
 ------------------
 
-Southern Oregon Net Ninjas contact: phil@southernoregonnetninjas
+Southern Oregon Net Ninjas contact: phil@southernoregonnetninjas.com
