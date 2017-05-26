@@ -1,6 +1,5 @@
 galaxy_info:
-  author: Phil
-  description: your description
+  author: "phandolin"
   company: Southern Oregon Net Ninjas
 
   # If the issue tracker for your role is not on github, uncomment the
@@ -16,7 +15,7 @@ galaxy_info:
   # - CC-BY
   license: license (GPLv2, CC-BY, etc)
 
-  min_ansible_version: 1.2
+  min_ansible_version: 2.0
 
   # If this a Container Enabled role, provide the minimum Ansible Container version.
   # min_ansible_container_version:
@@ -32,11 +31,12 @@ galaxy_info:
   #
   # platforms is a list of platforms, and each platform has a name and a list of versions.
   #
-  # platforms:
-  # - name: Fedora
-  #   versions:
-  #   - all
-  #   - 25
+  platforms:
+  - name: Windows
+    versions:
+     - 7
+     - 8
+     - 10
   # - name: SomePlatform
   #   versions:
   #   - all
