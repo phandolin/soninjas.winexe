@@ -5,7 +5,7 @@
           $path = "c:\temp\{{filename}}"
           $client = new-object System.Net.WebClient
           $client.DownloadFile($url, $path)
-  - name: Install {{Program Name}}
+  - name: Install {{Program_Name}}
     win_shell: |
           $shoretel = {cmd.exe /C "c:\temp\{{filename}} /S /v/qn"}
           Invoke-Command -ScriptBlock $shoretel
