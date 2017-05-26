@@ -2,7 +2,7 @@
 - name: Download {{Program_Name}}
   win_shell: |
         Invoke-WebRequest -Uri {{download_link}} -OutFile {{filename}}
-- name: Install {{Program Name}}
+- name: Install {{Program_Name}}
   win_shell: |
         $installcmd = {cmd.exe /C "{{filename}} /S /v/qn"}
         Invoke-Command -ScriptBlock $installcmd
