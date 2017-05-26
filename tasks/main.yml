@@ -1,4 +1,9 @@
 ---
 # tasks file for soninjas.winexe
 - include: winexe.yml
+  when: ansible_powershell_version >= "4"
+  static: no
+
+- include: winexe32.yml
+  when: ansible_powershell_version = "3"
   static: no
