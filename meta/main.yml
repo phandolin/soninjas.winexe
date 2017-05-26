@@ -34,9 +34,7 @@ galaxy_info:
   platforms:
   - name: Windows
     versions:
-     - 7
-     - 8
-     - 10
+     - all
   # - name: SomePlatform
   #   versions:
   #   - all
