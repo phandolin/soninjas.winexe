@@ -1,24 +1,4 @@
 ---
 # tasks file for soninjas.winexe
-- hosts: install
-  tasks:
-    - name: Download {{Program-Name}}
-      win_shell: |
-            Invoke-WebRequest -Uri {{download-link}} -OutFile {{filename}}
-    - name: Install {{Program Name}}
-      win_shell: |
-            $installcmd = {cmd.exe /C "{{filename}} /S /v/qn"}
-            Invoke-Command -ScriptBlock $installcmd
-
-- hosts: install32
-  tasks:
-    - name: Download {{Program-Name}}
-      win_shell: |
-            $url = "{{download-link}}"
-            $path = "c:\temp\{{filename}}"
-            $client = new-object System.Net.WebClient
-            $client.DownloadFile($url, $path)
-    - name: Install {{Program Name}}
-      win_shell: |
-            $shoretel = {cmd.exe /C "c:\temp\{{filename}} /S /v/qn"}
-            Invoke-Command -ScriptBlock $shoretel
+- include: winexe.yml
+  static: no
